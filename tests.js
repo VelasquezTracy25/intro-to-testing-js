@@ -1,9 +1,9 @@
-// Unit tests for the helloWorld function
+// Unit tests for the hello function
 describe('helloWorld', function() {
     it('should be a defined function', function() {
       expect(typeof helloWorld).toBe('function');
     });
-    it('should return a string when called', function() {
+    it('should return a string when called "Hello, World!"', function() {
       expect(typeof helloWorld()).toBe("string");
     });
     it('should return the string "Hello, World!" when executed', function() {
@@ -13,3 +13,34 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+// Tests for an even number
+describe ("isEven", function() {
+    it('should be a defined function', function(){
+        expect(typeof isEven).toBe("function");
+    });
+    it('should return a boolean value', function() {
+        expect(typeof isEven()).toBe("boolean");
+    });
+      it('should return true when passed a value of 10', function(){
+      expect(isEven(10)).toBe(true);
+    });
+});
+
+
+// Unit tests for the sayHello function
+describe('sayHello', function() {
+    it('should return a string when called "Hello, (name)!"', function() {
+        expect(sayHello(name)).toBe("Hello, " + name);
+    });
+});
+
+
+
+
+
+
+
+
+
+
