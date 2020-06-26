@@ -16,6 +16,9 @@ function helloWorld() {
 // return "Hello, " + name + "!";
 // }
 
-function sayHello(){
-return ""
+function sayHello(name){
+if (name=== "Alex") {
+return "Hello, Alex!"
+} else {return "Hello, Jane!";
+    }
 }
