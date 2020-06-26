@@ -28,26 +28,7 @@ describe('helloWorld', function() {
 // });
 //
 //
-// // Unit tests for the sayHello function
-// describe('sayHello', function() {
-//     it('should be a defined function', function() {
-//         expect(typeof helloWorld).toBe('function');
-//     });
-//     it("should return a string when called", function() {
-//         expect (typeof sayHello()).toBe('string')
-//     });
-//     it('should return the string "Hello, (name)" when executed', function() {
-//         expect(sayHello(name)).toBe("Hello, " + name + "!");
-//     });
-//     it('should return the string "Hello, Jane!" when passed the input of ("Jane")', function() {
-//         expect(sayHello('Jane')).toBe("Hello, Jane!");
-//     });
-//     it('should return the string "Hello, Alex!" when passed the input of ("Alex")', function() {
-//         expect(sayHello('Alex')).toBe("Hello, Alex!");
-//     });
-// });
-//
-
+// // Unit tests for the sayHello functio
 describe('sayHello', function() {
     it('should be a defined function', function() {
         expect (typeof sayHello).toBe('function');
@@ -64,7 +45,18 @@ describe('sayHello', function() {
     it('should return "Hello, Pat!', function(){
         expect (sayHello('Pat')).toBe("Hello, Pat!");
     });
+    it ('should return "Hello, World!" when passed undefined', function(){
+        expect(sayHello(undefined)).toBe("Hello, World!");
+    });
+    it ('should return "Hello, World!" when passed a true value', function(){
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it ('should return "Hello, World!" when passed a false value', function(){
+    expect(sayHello(false)).toBe("Hello, World!");
+    });
 });
+
+
 
 
 

@@ -11,7 +11,26 @@ function helloWorld() {
 //     }
 // }
 
-function sayHello(name){
-return "Hello, " + name + "!";
+function sayHello(name) {
+    if (typeof name === 'boolean') {
+        return "Hello, World!"
+    }if (typeof name == 'undefined') {
+        return "Hello, World!"
+    }if (typeof name == "number") {
+        return "Hello, World!";
+    }if (typeof name == "object") {
+        return "Hello, World!";
+    }if (name === "") {
+        return "Hello, World!";
+    } else {
+        return "Hello, " + name + "!";
+    }
 }
+
+console.log(sayHello(2.3))
+console.log(sayHello(null))
+console.log(sayHello(""))
+console.log(sayHello("5"))
+console.log(sayHello([1,2,3,4,5]))
+
 
