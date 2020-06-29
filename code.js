@@ -33,4 +33,13 @@ console.log(sayHello(""))
 console.log(sayHello("5"))
 console.log(sayHello([1,2,3,4,5]))
 
+function isFive(number) {
+return number == 5
+}
+
+console.log(isFive("5"))
+console.log(isFive(5))
+
+
+
 
