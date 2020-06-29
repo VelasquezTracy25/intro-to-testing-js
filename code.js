@@ -39,6 +39,24 @@ return number == 5
 
 console.log(isFive("5"))
 console.log(isFive(5))
+console.log(isFive("haha"))
+
+function isEven(number) {
+    return (parseInt(number) % 2 === 0);
+}
+console.log("number tests")
+console.log(isEven(2))
+console.log(isEven(-4))
+console.log(isEven(3))
+console.log(isEven("banana"))
+console.log(isEven("8"))
+console.log(isEven(Infinity))
+console.log(isEven(true))
+console.log(isEven(false))
+console.log(isEven())
+
+
+
 
 
 
